@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MH Merc</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="bg-loader">
+        <div class="loader">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <header class="header">
+            <div class="hero">
+                <h2 class="heading">MH Merch Shop</h2>
+                <p class="sub-heading">Shoes & T-Shirt</p>
+            </div>
+            <div class="features feature-1">
+                <h4 class="price">IDR 300K</h4>
+                <p class="item">Shoes</p>
+            </div>
+            <div class="features feature-2">
+                <h4 class="price">IDR 150K</h4>
+                <p class="item">T-Shirt</p>
+            </div>
+        </header>
+
+        <nav class="menu">
+            <div class="menu-toggle">
+                <input type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="brand">
+                <h1>MH Merch</h1>
+            </div>
+            <ul class="menu-list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+        </nav>
+
+        <section class="services">
+            <div class="service">
+                <div class="icon">💻</div>
+                <h3>Tutorial</h3>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut cumque modi amet deleniti. Ex, quaerat.
+                </p>
+            </div>
+            <div class="service">
+                <div class="icon">🎓</div>
+                <h3>Online Course</h3>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut cumque modi amet deleniti. Ex, quaerat.
+                </p>
+            </div>
+            <div class="service">
+                <div class="icon">🎙</div>
+                <h3>Podcast</h3>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut cumque modi amet deleniti. Ex, quaerat.
+                </p>
+            </div>
+            <div class="service">
+                <div class="icon">👕</div>
+                <h3>Merch</h3>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut cumque modi amet deleniti. Ex, quaerat.
+                </p>
+            </div>
+        </section>
+
+        <section class="gallery">
+            <h3>Gallery</h3>
+            <img src="https://source.unsplash.com/random/201x201" alt="img">
+            <img src="https://source.unsplash.com/random/202x202" alt="img">
+            <img src="https://source.unsplash.com/random/203x203" alt="img">
+            <img src="https://source.unsplash.com/random/204x204" alt="img">
+            <img src="https://source.unsplash.com/random/205x205" alt="img">
+            <img src="https://source.unsplash.com/random/206x206" alt="img">
+            <img src="https://source.unsplash.com/random/207x207" alt="img">
+            <img src="https://source.unsplash.com/random/208x208" alt="img">
+            <img src="https://source.unsplash.com/random/209x209" alt="img">
+            <img src="https://source.unsplash.com/random/210x210" alt="img">
+        </section>
+
+    </div>
+
+    <script>
+        document.onreadystatechange = function () {
+            if (document.readyState !== "complete") {
+                document.querySelector("body").style.visibility = "hidden";
+                document.querySelector(".bg-loader").style.visibility = "visible";
+            } else {
+                document.querySelector(".bg-loader").style.display = "none";
+                document.querySelector("body").style.visibility = "visible";
+            }
+        };
+
+        const menuToggle = document.querySelector('.menu-toggle input');
+        const nav = document.querySelector('nav ul');
+
+        menuToggle.addEventListener('click', function () {
+            nav.classList.toggle('slide');
+        })
+    </script>
+
+</body>
+
+</html>
